@@ -1,0 +1,6 @@
+sudo apt update -y
+sudo apt install apache2 -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
+echo "<body style='background:blue'><h1>Server 2</h1></body>" | sudo tee /var/www/html/index.html
